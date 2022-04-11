@@ -1,19 +1,18 @@
 import React from 'react';
+import Card from '../Card/Card';
 import './Articles.scss';
 
 const Articles = props => {
   const allArticles = props.articles.map(article => {
     return (
-      <section className="article-card" key={article.id}>
-        <section className="image-title-container">
-          <img src={article.multimedia[2].url} alt="Article Thumbnail" className="article-thumbnail"/>
-          <h2 className="article-title">{article.title}</h2>
-        </section>
-        <section className="card-details-container">
-          <p>{article.published_date}</p>
-          <p>{article.byline}</p>
-        </section>
-      </section>
+      <Card
+        key={article.id}
+        id={article.id}
+        multimedia={article.multimedia}
+        title={article.title}
+        published_date={article.published_date}
+        byline={article.byline}
+      />
     )
   })
 
