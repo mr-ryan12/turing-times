@@ -1,0 +1,11 @@
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 40px;
+}
+
+.article-card {
+  border: 5px solid teal;
+  padding: 10px;
+}
