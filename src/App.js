@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Articles from './components/Articles/Articles';
 import './App.scss';
 
 // api-key: BsMhAbdp1Yr9AvsW1w7Iu8RUHTavOe32
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="header">Turing Times</h1>
+      <Articles articles={articles}/>
     </div>
   );
 }
