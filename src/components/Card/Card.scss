@@ -1,0 +1,29 @@
+.article-thumbnail {
+  width: 12vw;
+  margin-bottom: 1vh;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 5px solid teal;
+  padding: 10px;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition-duration: .15s;
+    box-shadow: 5px 5px 25px teal;
+  }
+  &:focus {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition-duration: .15s;
+    box-shadow: 5px 5px 25px teal;
+  }
+}
+
+.article-title {
+  font-size: 2.5vh;
+  margin-bottom: 1vh;
+}
