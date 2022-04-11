@@ -9,11 +9,11 @@ const App = () => {
   const [articles, setArticles] = useState([]);
   const sections = ['arts', 'automobiles', 'books', 'business', 'fashion', 'food', 'health', 'home', 'insider', 'magazine', 'movies', 'nyregion', 'obituaries', 'opinion', 'politics', 'realestate', 'science', 'sports', 'sundayreview', 'technology', 'theater', 't-magazine', 'travel', 'upshot', 'us', 'world'];
 
-  useEffect(() => {
-    fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=BsMhAbdp1Yr9AvsW1w7Iu8RUHTavOe32')
-      .then(response => response.json())
-      .then(data => setArticles([...data.results]))
-  }, [])
+  // useEffect(() => {
+  //   fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=BsMhAbdp1Yr9AvsW1w7Iu8RUHTavOe32')
+  //     .then(response => response.json())
+  //     .then(data => setArticles([...data.results]))
+  // }, [])
   
   return (
     <div className="App">
