@@ -5,11 +5,14 @@ const Articles = props => {
   const allArticles = props.articles.map(article => {
     return (
       <section className="article-card" key={article.id}>
-        <img src={article.multimedia[2].url} alt="Article Thumbnail" className="article-thumbnail"/>
-        <h2>{article.title}</h2>
-        <p>{article.section}</p>
-        <p>{article.published_date}</p>
-        <p>{article.byline}</p>
+        <section className="image-title-container">
+          <img src={article.multimedia[2].url} alt="Article Thumbnail" className="article-thumbnail"/>
+          <h2 className="article-title">{article.title}</h2>
+        </section>
+        <section className="card-details-container">
+          <p>{article.published_date}</p>
+          <p>{article.byline}</p>
+        </section>
       </section>
     )
   })

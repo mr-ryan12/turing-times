@@ -6,10 +6,19 @@
 }
 
 .article-thumbnail {
+  width: 12vw;
   margin-bottom: 1vh;
 }
 
 .article-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 5px solid teal;
   padding: 10px;
+}
+
+.article-title {
+  font-size: 2.5vh;
+  margin-bottom: 1vh;
 }
