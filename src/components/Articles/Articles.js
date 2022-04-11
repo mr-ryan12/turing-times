@@ -5,7 +5,6 @@ import './Articles.scss';
 const Articles = props => {
   const cleanedArticles = props.articles.filter(article => article.multimedia !== null)
   const allArticles = cleanedArticles.map((article, index) => {
-    console.log( index, article.multimedia)
     return (
       <Card
         key={index}
