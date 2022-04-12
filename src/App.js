@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Articles from './components/Articles/Articles';
 import Filter from './components/Filter/Filter';
+import ArticleDetails from './components/ArticleDetails/ArticleDetails';
 import './App.scss';
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
       <h1 className="header">Turing Times</h1>
       <Filter sections={sections} filterArticles={filterArticles} setIsFiltered={setIsFiltered} setSelection={setSelection}/>
       {componentForRender}
+      <ArticleDetails/>
     </div>
   );
 }
