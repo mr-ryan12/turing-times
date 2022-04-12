@@ -23,7 +23,7 @@ const Filter = props => {
   }
   return (
     <form>
-      <label htmlFor="dropdown-menu">Please Select A Section:</label>
+      <label htmlFor="dropdown-menu">Please Make A Selection:</label>
       <select name="article-categories" id="dropdown-menu" onChange={event => handleChange(event)}>
         {allSections}
       </select>
