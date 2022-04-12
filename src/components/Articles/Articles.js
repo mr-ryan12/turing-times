@@ -27,7 +27,7 @@ const Articles = props => {
 
   const checkArticles = () => {
     if (props.isFiltered) {
-       return createArticleCards(cleanedFilteredArticles)
+      return createArticleCards(cleanedFilteredArticles)
     } else if (!props.isFiltered || props.selection === 'all articles') {
       return createArticleCards(cleanedArticles)
     }

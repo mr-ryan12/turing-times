@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu&display=swap');
+@import './styles/mixins';
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -68,10 +69,7 @@ table {
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include display-flex(column, center, center);
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -90,9 +88,7 @@ table {
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-flex(row, center, center);
   background-color: teal;
   color: #FFF;
   height: 10vh;
