@@ -8,3 +8,13 @@
 .empty-container-message {
   text-align: center;
 }
+
+@media screen and (min-device-width: 0px) and (max-device-width: 800px) {
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+}
