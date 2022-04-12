@@ -6,7 +6,7 @@ const Card = props => {
   const formattedDate = [month, day, year].join('/');
 
   return (
-    <section className="article-card" key={props.id}>
+    <section className="article-card" onClick={() => props.findArticle(props.short_url)}>
       <section className="image-title-container">
         <img src={props.multimedia[2].url} alt="Article Thumbnail" className="article-thumbnail"/>
         <h2 className="article-title">{props.title}</h2>
