@@ -26,7 +26,7 @@ View of the main page
 Filter articles by category  
 ![filtering-gif](https://user-images.githubusercontent.com/62816754/162883889-c59b3ffe-ae0d-494d-8b57-d0962c6a1f71.gif)
   
-Click on an article to see additional details
+Click on an article to see additional details  
 ![details-gif](https://user-images.githubusercontent.com/62816754/162883944-ac33aef0-5f02-4d8e-93d8-241e636f011e.gif)
   
 Responsive on mobile and tablet devices  
