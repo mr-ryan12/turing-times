@@ -8,7 +8,7 @@ const ArticleDetails = props => {
   return (
     <section className="modal-background">
       <section className="details-modal">
-        <img src={props.foundArticle.multimedia[1].url} alt="Modal Picture"/>
+        <img src={props.foundArticle.multimedia[1].url} alt="Modal Picture" className="modal-image"/>
         <section className="modal-details-container">
           <section className="modal-header-container">
             <h2 className="modal-title">{props.foundArticle.title}</h2>

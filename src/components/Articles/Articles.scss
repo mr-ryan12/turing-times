@@ -8,3 +8,18 @@
 .empty-container-message {
   text-align: center;
 }
+
+@media screen and (min-device-width: 0px) and (max-device-width: 800px) {
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+  }
+}
+
+@media screen and (min-device-width: 801px) and (max-device-width: 1300px) {
+  .articles-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
