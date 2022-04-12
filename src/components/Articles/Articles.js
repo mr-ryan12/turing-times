@@ -3,7 +3,8 @@ import Card from '../Card/Card';
 import './Articles.scss';
 
 const Articles = props => {
-  const cleanedArticles = props.articles.filter(article => article.multimedia !== null)
+  const cleanedArticles = props.articles.filter(article => article.multimedia !== null);
+  const cleanedFilteredArticles = props.filteredArticles.filter(article => article.multimedia !== null)
   // const allArticles = cleanedArticles.map((article, index) => {
   //   return (
   //     <Card
@@ -32,7 +33,7 @@ const Articles = props => {
   const checkArticles = () => {
     if (props.isFiltered) {
       return (
-        props.filteredArticles.map((article, index) => {
+        cleanedFilteredArticles.map((article, index) => {
           return (
             <Card
               key={index}
