@@ -1,7 +1,7 @@
 import React from 'react';
 import './ArticleDetails.scss';
 
-const ArticleDetails = () => {
+const ArticleDetails = props => {
   return (
     <section className="modal-background">
       <section className="details-modal">
@@ -19,7 +19,7 @@ const ArticleDetails = () => {
             <p className="modal-short-url-header">Follow this link to read more about this article:</p>
             <a target="_blank" href="https://nyti.ms/37Dgk6b" className="modal-short-url">https://nyti.ms/37Dgk6b</a>
           </section>
-          <button className="close-modal-button">Close</button>
+          <button className="close-modal-button" onClick={() => props.setIsModalOpen(false)}>Close</button>
         </section>
       </section>
     </section>

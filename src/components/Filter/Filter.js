@@ -13,7 +13,6 @@ const Filter = props => {
   }
   const handleSubmit = event => {
     event.preventDefault();
-    console.log(menuValue === '')
     if (menuValue === 'all articles' || menuValue === '') {
       props.setIsFiltered(false)
     } else {

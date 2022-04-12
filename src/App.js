@@ -9,7 +9,9 @@ const App = () => {
   const [filteredArticles, setFilteredArticles] = useState([]);
   const [isFiltered, setIsFiltered] = useState(false);
   const [selection, setSelection] = useState('');
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [foundArticle, setFoundArticle] = useState({})
   const sections = ['all articles', 'arts', 'automobiles', 'books', 'business', 'fashion', 'food', 'health', 'insider', 'magazine', 'movies', 'nyregion', 'obituaries', 'opinion', 'politics', 'realestate', 'science', 'sports', 'sundayreview', 'technology', 'theater', 't-magazine', 'travel', 'upshot', 'us', 'world'];
 
   useEffect(() => {
@@ -26,13 +28,19 @@ const App = () => {
     const filteredArticles = articles.filter(article => article.section === section)
     setFilteredArticles([...filteredArticles]);
   }
-  const componentForRender = isLoading ? <p>Loading...</p> : <Articles articles={articles} filteredArticles={filteredArticles} isFiltered={isFiltered} selection={selection}/>
+
+  const findArticle = url => {
+    const foundArticle = articles.find(article => article.short_url === url);
+    setFoundArticle(foundArticle);
+    setIsModalOpen(true);
+  }
+  const componentForRender = isLoading ? <p>Loading...</p> : <Articles articles={articles} filteredArticles={filteredArticles} isFiltered={isFiltered} selection={selection} findArticle={findArticle}/>
   return (
     <div className="App">
       <h1 className="header">Turing Times</h1>
       <Filter sections={sections} filterArticles={filterArticles} setIsFiltered={setIsFiltered} setSelection={setSelection}/>
       {componentForRender}
-      <ArticleDetails/>
+      {isModalOpen && <ArticleDetails foundArticle={foundArticle} setIsModalOpen={setIsModalOpen}/>}
     </div>
   );
 }

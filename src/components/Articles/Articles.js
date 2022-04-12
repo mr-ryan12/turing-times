@@ -17,6 +17,8 @@ const Articles = props => {
               title={article.title}
               published_date={article.published_date}
               byline={article.byline}
+              findArticle={props.findArticle}
+              short_url={article.short_url}
             />
           )
         })
@@ -32,6 +34,8 @@ const Articles = props => {
               title={article.title}
               published_date={article.published_date}
               byline={article.byline}
+              findArticle={props.findArticle}
+              short_url={article.short_url}
             />
           )
         })
