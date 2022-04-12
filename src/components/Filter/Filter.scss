@@ -18,9 +18,6 @@ form > button {
 
 @media screen and (min-device-width: 0px) and (max-device-width: 800px) {
   form {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     @include display-flex(column, normal, center);
   }
   form > select {
