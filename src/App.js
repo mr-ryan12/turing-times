@@ -20,7 +20,6 @@ const App = () => {
     fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=BsMhAbdp1Yr9AvsW1w7Iu8RUHTavOe32')
       .then(response => response.json())
       .then(data => {
-        console.log(data)
         setArticles([...data.results]);
         setIsLoading(false);
       })
