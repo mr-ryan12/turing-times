@@ -111,4 +111,12 @@ describe('Main Page User Flow', () => {
       .get('.empty-container-message')
       .should('have.text', 'Sorry, there are not any articles for that selection. Please make another selection.')
   });
+
+  it('Should display an error message', () => {
+    cy.intercept('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=BsMhAbdp1Yr9AvsW1w7Iu8RUHTavOe32', { statusCode: 404 }).as('error-response')
+      .visit('http://localhost:3000')
+      .wait('@error-response')
+      .get('.error-message')
+      .contains('So sorry, something went wrong. Please try again later.')
+  });
 });
