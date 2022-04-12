@@ -27,7 +27,7 @@ const Filter = props => {
       <select name="article-categories" id="dropdown-menu" onChange={event => handleChange(event)}>
         {allSections}
       </select>
-      <button onClick={event => handleSubmit(event)}>Submit</button>
+      <button onClick={event => handleSubmit(event)} className="submit-button">Submit</button>
     </form>
   )
 }
