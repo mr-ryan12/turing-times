@@ -17,3 +17,9 @@
     width: 85%;
   }
 }
+
+@media screen and (min-device-width: 801px) and (max-device-width: 1300px) {
+  .articles-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
