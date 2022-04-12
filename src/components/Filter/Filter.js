@@ -13,7 +13,7 @@ const Filter = props => {
   }
   const handleSubmit = event => {
     event.preventDefault();
-    if (menuValue === 'home') {
+    if (menuValue === 'all articles') {
       props.setIsFiltered(false)
     } else {
       props.setIsFiltered(true);
@@ -25,7 +25,6 @@ const Filter = props => {
     <form>
       <label htmlFor="dropdown-menu">Please Select A Section:</label>
       <select name="article-categories" id="dropdown-menu" onChange={event => handleChange(event)}>
-        <option value="">--Sections--</option>
         {allSections}
       </select>
       <button onClick={event => handleSubmit(event)}>Submit</button>

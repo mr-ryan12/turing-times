@@ -47,7 +47,7 @@ const Articles = props => {
           )
         })
       )
-    } else if (!props.isFiltered || props.selection === 'home') {
+    } else if (!props.isFiltered || props.selection === 'all articles') {
       return (
         cleanedArticles.map((article, index) => {
           return (
