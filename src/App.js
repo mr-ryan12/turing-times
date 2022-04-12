@@ -11,7 +11,8 @@ const App = () => {
   const [selection, setSelection] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [foundArticle, setFoundArticle] = useState({})
+  const [foundArticle, setFoundArticle] = useState({});
+  const [error, setError] = useState(false);
   const sections = ['all articles', 'arts', 'automobiles', 'books', 'business', 'fashion', 'food', 'health', 'insider', 'magazine', 'movies', 'nyregion', 'obituaries', 'opinion', 'politics', 'realestate', 'science', 'sports', 'sundayreview', 'technology', 'theater', 't-magazine', 'travel', 'upshot', 'us', 'world'];
 
   useEffect(() => {
@@ -22,6 +23,9 @@ const App = () => {
         console.log(data)
         setArticles([...data.results]);
         setIsLoading(false);
+      })
+      .catch(() => {
+        setError(true)
       })
   }, [])
 
@@ -42,6 +46,7 @@ const App = () => {
       <Filter sections={sections} filterArticles={filterArticles} setIsFiltered={setIsFiltered} setSelection={setSelection}/>
       {componentForRender}
       {isModalOpen && <ArticleDetails foundArticle={foundArticle} setIsModalOpen={setIsModalOpen}/>}
+      {error && <p className="error-message">So sorry, something went wrong. Please try again later.</p>}
     </div>
   );
 }
