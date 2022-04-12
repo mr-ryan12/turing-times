@@ -124,6 +124,70 @@
         }
         ],
         "short_url": "https://nyti.ms/3LVzmUj"
-        }
+        },
+        {
+          "section": "technology",
+          "subsection": "",
+          "title": "Twitter Grapples With an Elon Musk Problem",
+          "abstract": "Mr. Musk, Twitter’s biggest shareholder, is free to buy more stock in the company and could use the platform against itself. Some employees are dismayed.",
+          "url": "https://www.nytimes.com/2022/04/11/technology/twitter-elon-musk-problem.html",
+          "uri": "nyt://article/42f13b1f-dec1-5718-87c1-b5f73450ed01",
+          "byline": "By Mike Isaac and Kate Conger",
+          "item_type": "Article",
+          "updated_date": "2022-04-11T17:50:23-04:00",
+          "created_date": "2022-04-11T17:29:45-04:00",
+          "published_date": "2022-04-11T17:29:45-04:00",
+          "material_type_facet": "",
+          "kicker": "",
+          "des_facet": [
+          "Social Media",
+          "Computers and the Internet",
+          "Stocks and Bonds",
+          "Shareholder Rights and Activism",
+          "Boards of Directors",
+          "Appointments and Executive Changes"
+          ],
+          "org_facet": [
+          "Twitter"
+          ],
+          "per_facet": [
+          "Musk, Elon",
+          "Agrawal, Parag"
+          ],
+          "geo_facet": [],
+          "multimedia": [
+          {
+          "url": "https://static01.nyt.com/images/2022/04/11/business/11Twitter-01/merlin_204290994_3e3baef9-afc4-49f6-8c0a-72a8699277ad-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Elon Musk was revealed to be Twitter’s biggest shareholder last week. He also leads the electric car company Tesla.",
+          "copyright": "Pool photo by Christian Marquardt"
+          },
+          {
+          "url": "https://static01.nyt.com/images/2022/04/11/business/11Twitter-01/merlin_204290994_3e3baef9-afc4-49f6-8c0a-72a8699277ad-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Elon Musk was revealed to be Twitter’s biggest shareholder last week. He also leads the electric car company Tesla.",
+          "copyright": "Pool photo by Christian Marquardt"
+          },
+          {
+          "url": "https://static01.nyt.com/images/2022/04/11/business/11Twitter-01/11Twitter-01-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Elon Musk was revealed to be Twitter’s biggest shareholder last week. He also leads the electric car company Tesla.",
+          "copyright": "Pool photo by Christian Marquardt"
+          }
+          ],
+          "short_url": "https://nyti.ms/3Jx3eVp"
+          }
   ]
 }

@@ -17,7 +17,7 @@ describe('Main Page User Flow', () => {
 
   it('Should have article cards', () => {
     cy.get('.article-card')
-      .should('have.length', 2)
+      .should('have.length', 3)
   });
 
   it('Should have a submit button', () => {
@@ -33,5 +33,39 @@ describe('Main Page User Flow', () => {
   it('Should have a message to make a selection', () => {
     cy.get('label[for="dropdown-menu"]')
       .should('have.text', 'Please Make A Selection:')
+  });
+
+  it('Should have a title on the article card', () => {
+    cy.get('.article-card')
+      .first()
+      .contains('Bucha’s Month of Terror')
+  });
+
+  it('Should have a thumbnail', () => {
+    cy.get('.article-thumbnail')
+      .first()
+      .should('exist')
+  });
+
+  it('Should have a date', () => {
+    cy.get('.article-card')
+      .first()
+      .contains('04/11/2022')
+  });
+
+  it('Should have a byline', () => {
+    cy.get('.article-card')
+      .contains('By Daniel Berehulak and Carlotta Gall')
+  });
+
+  it('Should fitler cards', () => {
+    cy.get('.article-card')
+      .should('have.length', 3)
+      .get('select')
+      .select('world')
+      .get('.submit-button')
+      .click()
+      .get('.article-card')
+      .should('have.length', 2)
   });
 });
