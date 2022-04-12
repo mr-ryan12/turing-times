@@ -3,8 +3,6 @@ import Articles from './components/Articles/Articles';
 import Filter from './components/Filter/Filter';
 import './App.scss';
 
-// api-key: BsMhAbdp1Yr9AvsW1w7Iu8RUHTavOe32
-
 const App = () => {
   const [articles, setArticles] = useState([]);
   const [filteredArticles, setFilteredArticles] = useState([]);
@@ -26,14 +24,12 @@ const App = () => {
   const filterArticles = section => {
     const filteredArticles = articles.filter(article => article.section === section)
     setFilteredArticles([...filteredArticles]);
-    console.log(filteredArticles);
   }
   const componentForRender = isLoading ? <p>Loading...</p> : <Articles articles={articles} filteredArticles={filteredArticles} isFiltered={isFiltered} selection={selection}/>
   return (
     <div className="App">
       <h1 className="header">Turing Times</h1>
       <Filter sections={sections} filterArticles={filterArticles} setIsFiltered={setIsFiltered} setSelection={setSelection}/>
-      {/* <Articles articles={articles} filteredArticles={filteredArticles} isFiltered={isFiltered} selection={selection}/> */}
       {componentForRender}
     </div>
   );
