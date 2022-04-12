@@ -13,8 +13,13 @@ const Filter = props => {
   }
   const handleSubmit = event => {
     event.preventDefault();
-    props.setIsFiltered(true);
+    if (menuValue === 'home') {
+      props.setIsFiltered(false)
+    } else {
+      props.setIsFiltered(true);
+    }
     props.filterArticles(menuValue);
+    props.setSelection(menuValue);
   }
   return (
     <form>

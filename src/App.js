@@ -9,6 +9,7 @@ const App = () => {
   const [articles, setArticles] = useState([]);
   const [filteredArticles, setFilteredArticles] = useState([]);
   const [isFiltered, setIsFiltered] = useState(false);
+  const [selection, setSelection] = useState('')
   const sections = ['arts', 'automobiles', 'books', 'business', 'fashion', 'food', 'health', 'home', 'insider', 'magazine', 'movies', 'nyregion', 'obituaries', 'opinion', 'politics', 'realestate', 'science', 'sports', 'sundayreview', 'technology', 'theater', 't-magazine', 'travel', 'upshot', 'us', 'world'];
 
   useEffect(() => {
@@ -20,14 +21,14 @@ const App = () => {
   const filterArticles = section => {
     const filteredArticles = articles.filter(article => article.section === section)
     setFilteredArticles([...filteredArticles]);
-    console.log(filteredArticles)
+    console.log(filteredArticles);
   }
   
   return (
     <div className="App">
       <h1 className="header">Turing Times</h1>
-      <Filter sections={sections} filterArticles={filterArticles} setIsFiltered={setIsFiltered}/>
-      <Articles articles={articles} filteredArticles={filteredArticles} isFiltered={isFiltered}/>
+      <Filter sections={sections} filterArticles={filterArticles} setIsFiltered={setIsFiltered} setSelection={setSelection}/>
+      <Articles articles={articles} filteredArticles={filteredArticles} isFiltered={isFiltered} selection={selection}/>
     </div>
   );
 }

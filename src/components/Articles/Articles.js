@@ -31,6 +31,7 @@ const Articles = props => {
   //})
 
   const checkArticles = () => {
+    console.log(props.selection)
     if (props.isFiltered) {
       return (
         cleanedFilteredArticles.map((article, index) => {
@@ -46,7 +47,7 @@ const Articles = props => {
           )
         })
       )
-    } else {
+    } else if (!props.isFiltered || props.selection === 'home') {
       return (
         cleanedArticles.map((article, index) => {
           return (
