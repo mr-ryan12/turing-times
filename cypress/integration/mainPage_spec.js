@@ -98,4 +98,17 @@ describe('Main Page User Flow', () => {
       .get('.details-modal')
       .should('not.exist')
   });
+
+  it('Should display a message if there are not any articles', () => {
+    cy.get('.article-card')
+      .should('have.length', 3)
+      .get('select')
+      .select('arts')
+      .get('.submit-button')
+      .click()
+      .get('.article-card')
+      .should('have.length', 0)
+      .get('.empty-container-message')
+      .should('have.text', 'Sorry, there are not any articles for that selection. Please make another selection.')
+  });
 });
