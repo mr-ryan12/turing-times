@@ -1,3 +1,6 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
 form > label,
 form > select,
 form > button {
@@ -6,18 +9,16 @@ form > button {
 }
 
 form > button {
-  border: teal;
+  border: $main-color;
   width: 5vw;
-  background-color: teal;
+  background-color: $main-color;
   color: #fff;
   border-radius: 10px;
 }
 
 @media screen and (min-device-width: 0px) and (max-device-width: 800px) {
   form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include display-flex(column, normal, center);
   }
   form > select {
     margin-top: 2vh;
@@ -26,7 +27,13 @@ form > button {
   }
   form > button {
     margin-top: 2vh;
-    width: 12vw;
+    width: 15vw;
     height: 5vh;
+  }
+}
+
+@media screen and (min-device-width: 801px) and (max-device-width: 1300px) {
+  form > button {
+    width: 10vw;
   }
 }

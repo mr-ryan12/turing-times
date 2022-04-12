@@ -1,25 +1,26 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
 .article-thumbnail {
   width: 12vw;
   margin-bottom: 1vh;
 }
 
 .article-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 5px solid teal;
+  @include display-flex(column, space-between, normal);
+  border: 5px solid $main-color;
   padding: 10px;
   &:hover {
     cursor: pointer;
     transform: scale(1.03);
     transition-duration: .15s;
-    box-shadow: 5px 5px 25px teal;
+    box-shadow: 5px 5px 25px $main-color;
   }
   &:focus {
     cursor: pointer;
     transform: scale(1.03);
     transition-duration: .15s;
-    box-shadow: 5px 5px 25px teal;
+    box-shadow: 5px 5px 25px $main-color;
   }
 }
 

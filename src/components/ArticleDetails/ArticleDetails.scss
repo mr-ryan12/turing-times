@@ -1,3 +1,6 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
 .modal-background {
   width: 100vw;
   height: 100vh;
@@ -11,8 +14,7 @@
 }
 
 .details-modal {
-  display: flex;
-  justify-content: space-around;
+  @include display-flex(row, space-around, normal);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -26,9 +28,7 @@
 }
 
 .modal-details-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include display-flex(column, space-between, normal);
   margin-left: 0.5vw;
 }
 
@@ -52,24 +52,26 @@
 .modal-short-url {
   font-size: 2.5vh;
   text-decoration: none;
-  color: teal;
+  color: $main-color;
 }
 
 .close-modal-button {
   width: 40%;
   align-self: center;
-  border: 5px solid teal;
-  background-color: teal;
+  border: 5px solid $main-color;
+  background-color: $main-color;
   color: #fff;
   border-radius: 20px;
   font-size: 2vh;
 }
 
 @media screen and (min-device-width: 0px) and (max-device-width: 800px) {
+  .modal-background {
+    width: 100%;
+    height: 100%;
+  }
   .details-modal {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @include display-flex(column, space-around, normal);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -80,6 +82,11 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 70px;
     border-radius: 100px;
+  }
+
+  .modal-image {
+    width: 60%;
+    align-self: center;
   }
 
   .modal-title,
