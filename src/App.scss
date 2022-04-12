@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu&display=swap');
 @import './styles/mixins';
+@import './styles/variables';
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -89,7 +91,7 @@ table {
 
 .header {
   @include display-flex(row, center, center);
-  background-color: teal;
+  background-color: $main-color;
   color: #FFF;
   height: 10vh;
   font-size: 4vh;
