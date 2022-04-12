@@ -2,22 +2,25 @@ import React from 'react';
 import './ArticleDetails.scss';
 
 const ArticleDetails = props => {
+  const [year, month, day] = props.foundArticle.published_date.split('T')[0].split('-');
+  const formattedDate = [month, day, year].join('/');
+
   return (
     <section className="modal-background">
       <section className="details-modal">
-        <img src="https://static01.nyt.com/images/2022/04/10/world/xxbucha3-promo/merlin_205302633_f60ec66d-8227-47e6-b703-b7b936ad93b0-threeByTwoSmallAt2X.jpg" alt="Modal Picture"/>
+        <img src={props.foundArticle.multimedia[1].url} alt="Modal Picture"/>
         <section className="modal-details-container">
           <section className="modal-header-container">
-            <h2 className="modal-title">Bucha's Month of Terror</h2>
-            <p className="modal-date">04/10/2022</p>
-            <p className="modal-byline">By Daniel Berehulak and Carlotta Gall</p>
+            <h2 className="modal-title">{props.foundArticle.title}</h2>
+            <p className="modal-date">{formattedDate}</p>
+            <p className="modal-byline">{props.foundArticle.byline}</p>
           </section>
           <section className="modal-abstract-container">
-            <p className="modal-abstract">We documented dozens of killings of civilians and interviewed scores of witnesses to uncover Russian atrocities in Ukraine.</p>
+            <p className="modal-abstract">{props.foundArticle.abstract}</p>
           </section>
           <section className="modal-link-container">
             <p className="modal-short-url-header">Follow this link to read more about this article:</p>
-            <a target="_blank" href="https://nyti.ms/37Dgk6b" className="modal-short-url">https://nyti.ms/37Dgk6b</a>
+            <a target="_blank" href={props.foundArticle.short_url} className="modal-short-url">{props.foundArticle.short_url}</a>
           </section>
           <button className="close-modal-button" onClick={() => props.setIsModalOpen(false)}>Close</button>
         </section>
