@@ -1,0 +1,129 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2022 The New York Times Company. All Rights Reserved.",
+  "section": "home",
+  "last_updated": "2022-04-11T22:37:47-04:00",
+  "num_results": 59,
+  "results": [
+    {
+      "section": "world",
+      "subsection": "europe",
+      "title": "Bucha’s Month of Terror",
+      "abstract": "We documented dozens of killings of civilians and interviewed scores of witnesses to uncover Russian atrocities in Ukraine.",
+      "url": "https://www.nytimes.com/interactive/2022/04/11/world/europe/bucha-terror.html",
+      "uri": "nyt://interactive/dca59995-3a87-58bc-84e1-b58700fa2ada",
+      "byline": "By Daniel Berehulak and Carlotta Gall",
+      "item_type": "Interactive",
+      "updated_date": "2022-04-11T20:01:14-04:00",
+      "created_date": "2022-04-11T05:31:11-04:00",
+      "published_date": "2022-04-11T05:31:11-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+      "War Crimes, Genocide and Crimes Against Humanity",
+      "Russian Invasion of Ukraine (2022)"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [
+      "Ukraine",
+      "Russia",
+      "Bucha (Ukraine)"
+      ],
+      "multimedia": [
+      {
+      "url": "https://static01.nyt.com/images/2022/04/10/world/xxbucha3-promo/merlin_205302633_f60ec66d-8227-47e6-b703-b7b936ad93b0-superJumbo.jpg",
+      "format": "Super Jumbo",
+      "height": 1365,
+      "width": 2048,
+      "type": "image",
+      "subtype": "photo",
+      "caption": "",
+      "copyright": "Daniel Berehulak for The New York Times"
+      },
+      {
+      "url": "https://static01.nyt.com/images/2022/04/10/world/xxbucha3-promo/merlin_205302633_f60ec66d-8227-47e6-b703-b7b936ad93b0-threeByTwoSmallAt2X.jpg",
+      "format": "threeByTwoSmallAt2X",
+      "height": 400,
+      "width": 600,
+      "type": "image",
+      "subtype": "photo",
+      "caption": "",
+      "copyright": "Daniel Berehulak for The New York Times"
+      },
+      {
+      "url": "https://static01.nyt.com/images/2022/04/10/world/xxbucha3-promo/merlin_205302633_f60ec66d-8227-47e6-b703-b7b936ad93b0-thumbLarge.jpg",
+      "format": "Large Thumbnail",
+      "height": 150,
+      "width": 150,
+      "type": "image",
+      "subtype": "photo",
+      "caption": "",
+      "copyright": "Daniel Berehulak for The New York Times"
+      }
+      ],
+      "short_url": "https://nyti.ms/37Dgk6b"
+      },
+      {
+        "section": "world",
+        "subsection": "middleeast",
+        "title": "No More ‘Have a Nice Day’: Lviv Learns to Live With War",
+        "abstract": "Ukraine’s cultural capital, the western city of Lviv, is trying to adjust to being on the fringes of war and at the center of massive displacement.",
+        "url": "https://www.nytimes.com/2022/04/11/world/middleeast/ukraine-lviv-refugees.html",
+        "uri": "nyt://article/5d47437e-c639-55bd-b51c-dd88d830f501",
+        "byline": "By Jane Arraf and Mauricio Lima",
+        "item_type": "Article",
+        "updated_date": "2022-04-11T20:26:04-04:00",
+        "created_date": "2022-04-11T18:11:28-04:00",
+        "published_date": "2022-04-11T18:11:28-04:00",
+        "material_type_facet": "",
+        "kicker": "Ukraine Dispatch",
+        "des_facet": [
+        "Russian Invasion of Ukraine (2022)",
+        "Refugees and Displaced Persons",
+        "Bars and Nightclubs",
+        "Alcoholic Beverages"
+        ],
+        "org_facet": [],
+        "per_facet": [],
+        "geo_facet": [
+        "Lviv (Ukraine)",
+        "Ukraine",
+        "Russia"
+        ],
+        "multimedia": [
+        {
+        "url": "https://static01.nyt.com/images/2022/04/11/world/11ukraine-lviv-promo/merlin_205086426_89e73ed4-d8dd-452b-a76b-8778777eb054-superJumbo.jpg",
+        "format": "Super Jumbo",
+        "height": 1366,
+        "width": 2048,
+        "type": "image",
+        "subtype": "photo",
+        "caption": "Mourners outside the Saints Peter and Paul Garrison Church at a service for three killed Ukrainian soldiers last week.",
+        "copyright": "Mauricio Lima for The New York Times"
+        },
+        {
+        "url": "https://static01.nyt.com/images/2022/04/11/world/11ukraine-lviv-promo/merlin_205086426_89e73ed4-d8dd-452b-a76b-8778777eb054-threeByTwoSmallAt2X.jpg",
+        "format": "threeByTwoSmallAt2X",
+        "height": 400,
+        "width": 600,
+        "type": "image",
+        "subtype": "photo",
+        "caption": "Mourners outside the Saints Peter and Paul Garrison Church at a service for three killed Ukrainian soldiers last week.",
+        "copyright": "Mauricio Lima for The New York Times"
+        },
+        {
+        "url": "https://static01.nyt.com/images/2022/04/11/world/11ukraine-lviv-promo/11ukraine-lviv-1-thumbLarge.jpg",
+        "format": "Large Thumbnail",
+        "height": 150,
+        "width": 150,
+        "type": "image",
+        "subtype": "photo",
+        "caption": "Mourners outside the Saints Peter and Paul Garrison Church at a service for three killed Ukrainian soldiers last week.",
+        "copyright": "Mauricio Lima for The New York Times"
+        }
+        ],
+        "short_url": "https://nyti.ms/3LVzmUj"
+        }
+  ]
+}
