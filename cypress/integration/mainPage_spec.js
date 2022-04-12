@@ -68,4 +68,34 @@ describe('Main Page User Flow', () => {
       .get('.article-card')
       .should('have.length', 2)
   });
+
+  it('Should click on an article to see more details', () => {
+    cy.get('.article-card')
+      .eq(2)
+      .click()
+      .get('.modal-title')
+      .should('have.text', 'Twitter Grapples With an Elon Musk Problem')
+      .get('.modal-date')
+      .should('have.text', '04/11/2022')
+      .get('.modal-byline')
+      .should('have.text', 'By Mike Isaac and Kate Conger')
+      .get('.modal-abstract-container')
+      .contains('Mr. Musk, Twitter’s biggest shareholder, is free to buy more stock in the company and could use the platform against itself. Some employees are dismayed.')
+      .get('.modal-link-container')
+      .contains('Follow this link to read more about this article:')
+      .get('.modal-link-container')
+      .contains('https://nyti.ms/3Jx3eVp')
+  });
+
+  it('Should close the modal', () => {
+    cy.get('.article-card')
+      .eq(2)
+      .click()
+      .get('.details-modal')
+      .should('exist')
+      .get('.close-modal-button')
+      .click()
+      .get('.details-modal')
+      .should('not.exist')
+  });
 });
